@@ -1,15 +1,19 @@
 {
   "expo": {
-    "name": "TodoApp",
-    "slug": "TodoApp",
+    "name": "Todo App",
+    "slug": "todo-app",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/logo1.png",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/logo.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#1e212d"
     },
+	"notification": {
+       "icon": "./assets/logo1.png",
+       "color": "#1e212d"
+     },
     "updates": {
       "fallbackToCacheTimeout": 0
     },
@@ -17,16 +21,21 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "bundleIdentifier": "com.yourcompany.yourappname",
+      "buildNumber": "1.0.0"
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#FFFFFF"
-      }
+        "foregroundImage": "./assets/logo1.png",
+        "backgroundColor": "#1e212d"
+      },
+	   "useNextNotificationsApi": true,
+      "package": "com.curry_man.todoapp",
+	   "versionCode": 1
+     
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/logo.png"
     }
   }
 }
